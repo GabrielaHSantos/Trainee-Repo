@@ -1,6 +1,10 @@
-#Apresentação
+# Apresentação
 
-Olá! Eu sou a Gabriela Henrique dos Santos!
+
+![fotoapresentação](/foto_apresentação/foto_gabi.JPG)
+
+
+## Olá! Eu sou a Gabriela Henrique dos Santos!
 
 Atualmente moro no Rio de Janeiro e estou cursando o segundo periodo de Análise e Desenvolvimento de Sistemas na UNISUAM.
 

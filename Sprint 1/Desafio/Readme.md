@@ -6,6 +6,7 @@ O desafio tem como intuito principal mostrar nossa pratica com comandos de *Linu
 
 Bom, nesse desafio irei utilizar comandos no linux pra processar e gerar um relátorio de vendas. Ele também vai ter um comando onde é feito um agendamento da execução. Enfim, entrarei em mais detealhes quando chegarmos lá. 
 
+<br>
 
 # Instruções, como foi realizado de fato o desafio.
 
@@ -14,7 +15,7 @@ Bom, nesse desafio irei utilizar comandos no linux pra processar e gerar um rel�
  #### A imagem segue abaixo.
 
 ![listandoosdirearquivos](../Evidencias/listagem_diretorios_e_arquivos.png)
-
+<br>
 
 ### 1. Criação dos diretórios e inserção dos arquivos.
 
@@ -77,8 +78,9 @@ Abaixo está a imagem do script processador_de_vendas.sh.
 ![scriptprocessador](../Evidencias/script_processador_de_vendas.png)
 
 Por ser maior irei por partes, para facilitar o entendimento. Bom logo no inicio do código eu defini as variáveis que são:
+<br>
 
-#### Explicação das Variáveis no Script processador_de_vendas.sh
+### Explicação das Variáveis no Script processador_de_vendas.sh
 
 No script, utilizei diversas variáveis para organizar e manipular os arquivos de vendas e seus backups de maneira mais eficiente possivel. Abaixo vou dar uma breve explicação do que cada uma está fazendo.
 
@@ -140,8 +142,9 @@ No script, utilizei diversas variáveis para organizar e manipular os arquivos d
     ```
 
 Bom, após definir as variáveis, o script agora começa a executar as ações que estão relacionadas ao backup e a criação do relatorio. 
+<br>
 
-#### Execuções no script processador_de_vendas.sh
+### Execuções no script processador_de_vendas.sh
 
 O primeiro comando utilizado foi:
 
@@ -224,8 +227,9 @@ Ao fim disso tudo salvamos clicando *`"Ctrl+o"`* depois o botão *`"Enter"`* e f
 ``` bash
 chmod +x processador_de_vendas.sh
 ```
+<br>
 
-#### Explicação das Variáveis no Script consolidador_de_processamento_de_vendas.sh
+### Explicação das Variáveis no Script consolidador_de_processamento_de_vendas.sh
 
 Esse script, em comparação com o anterior, ficou menor tanto na quantidade de variaveis quanto na parte de execução, até porque ele foca em consolidar relatórios já gerados em um único arquivo, sem realizar tantas operações de backup e manipulação de dados.
 
@@ -251,7 +255,7 @@ RELATORIO_FINAL="$BACKUP_DIR/relatorio_final.txt"
 
 Ela armazena o caminho do arquivo onde será salvo o relatório consolidado, chamado relatorio_final.txt e ele ficará dentro do diretório de backup.
 
-#### Execuções no script consolidador_de_processamento_de_vendas.sh
+### Execuções no script consolidador_de_processamento_de_vendas.sh
 
 O comando abaixo:
 
@@ -295,6 +299,7 @@ Bom após isso tudo realizamos as mesmas coisas do anterior clicando *`"Ctrl+o"`
 ``` bash
 chmod +x consolidador_de_processamento_de_vendas.sh
 ```
+<br>
 
 ### Resultados da execução dos scripts
 
@@ -319,6 +324,71 @@ Ele de fato une os relatorios criados, agora abaixo o resultado de como fica o r
 
 ![resultadorelatorio.txt](../Evidencias/relatorio_normal.png)
 
-e bom eu alterei os dados manualmente no wordpad, vou deixar a imagem abaixo, pra ver se estava salvando e como você pode ver nos resultados acima ele está alterando sim!
+e bom eu alterei os dados manualmente no wordpad, vou deixar a imagem abaixo, pra ver se estava salvando e como você pode ver nos resultados acima ele está alterando sim conforme os dados que inserimos!
 
 ![dadosalteradosmanualmente](../Evidencias/dados_alterados.png)
+
+<br>
+
+### Agendamento de execução do arquivo processador_de_venda.sh
+
+Após vermos como executar manualmente os arquivos, o enunciado nos pede para fazer um agendamento de execução do arquivo com os comandos linux, então abaixo irei mostrar o comando. 
+
+Para agendar essa execução usamos o comando para abrir o editor
+
+``` bash
+crontab -e
+```
+
+e dentro desse editor inserimos o código abaixo
+
+``` bash
+27 15 * * 1-4 cd /home/gabsantos/ecommerce && bash processamento_de_vendas.sh
+```
+
+com o código acima a gente ta agendando uma execução de segunda a quinta as 15:27, para garantir que o script funcione eu utilizei o "cd" pois ele acessa o diretório correto e executa o comando nele. 
+<br>
+
+Abaixo irei por as imagens de como ele fica dentro do editor
+
+![cron1527](../Evidencias/crontab_agendamento.png)
+
+No caso após inserir esse comando, você clica pressione `*Ctrl+O*`, `*Enter*` e `*Ctrl+X*` (só lembrando que estou usando o editor nano).
+
+<br>
+
+Enfim, por conta de eu ter realizado essa parte do desafio meio que neste último final de semana, acabou que não deu para realizar a execução deste agendamento nos dias desejados porém eu alterei o comando pra executar de dois em dois minutos para garantir que estava funcionando. Abaixo irei por o comando que utilizei e imagens dos resultados.
+
+``` bash
+*/2 * * * * cd /home/gabsantos/ecommerce && bash processamento_de_vendas.sh
+```
+
+Eu dei o comando abaixo para listar meu agendamento feito e mostrar como ficou também irei por a imagem do resultado do comando abaixo. 
+
+``` bash
+crontab -l
+```
+
+![crontab2min](../Evidencias/crontab_2min.png)
+
+<br>
+
+Deixei o resultado garantindo o funcionamento do agendamento e relatorio_final sendo criado com a união dos relatorios feito pelo agendamento abaixo.
+
+![pastacmagendamentosde2em2min](../Evidencias/relatorios_2em2_napasta.png)
+
+<br>
+
+Como podemos ver abaixo, ele de fato uniu os relatórios e eles tem um intervalo de dois em dois minutos entre a criação. Não deu pra eu mostrar todos que ele criou pois não havia espaço. Mas acredito que tenha dado pra mostrar ele realizando o agendamento. 
+
+![relatoriofinal](../Evidencias/relatorio_final2em2.png)
+
+<br>
+
+### Notas finais
+
+<br>
+
+Bom eu so queria fazer algumas sugestões nessas notas finais, meio que no ponto onde tive mais dificuldade, a questão do agendamento e os scripts que também foram um pouco complicados. Mais por conta de não haver esse conteúdo dentro dos cursos que foram passados pra gente. So queria sugerir que na próxima vez seria interessante nesse primeiro sprint selecionar melhor o curso disponibilizado na udemy. Apenas isso, querendo ou não passei em torno de quase dois dias presa na questão do agendamento, pois o cron não realizava a execução agendada. Sobre os scripts dentro do edito de texto, acabei tendo de ver algumas video aulas no youtube, mas num geral foi bem tranquilo.
+
+E sobre sugestões de melhorias nesse primeiro desafio, pras próximas vezes, acho que seria interessante esse agendamento ter uma condicional por exemplo de quando ele atinge x números ele para, salva o relatorio final como um novo informando no nome dele e que ele é data x ate data y. Após o salvamento ele limpa o conteúdo do relatório e inicia um novo seguindo o mesmo agendamento ou até outro. Enfim, acredito que ele ficaria talvez mais rendodinho. 
