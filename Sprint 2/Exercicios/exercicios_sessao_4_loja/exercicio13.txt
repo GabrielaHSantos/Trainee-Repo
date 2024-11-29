@@ -1,0 +1,15 @@
+SELECT 
+    tbvendas.cdpro,
+    tbvendas.nmcanalvendas,
+    tbvendas.nmpro,
+    SUM(tbvendas.qtd) AS quantidade_vendas
+FROM 
+    tbvendas
+WHERE 
+    tbvendas.nmcanalvendas IN ('Ecommerce', 'Matriz')
+    AND tbvendas.status = 'Concluído'
+GROUP BY 
+    tbvendas.cdpro, tbvendas.nmcanalvendas, tbvendas.nmpro
+Order by 
+    quantidade_vendas
+Limit 10;

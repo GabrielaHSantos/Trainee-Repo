@@ -1,0 +1,10 @@
+SELECT livro.cod, livro.titulo, livro.autor, livro.valor, livro.editora,autor.nome, editora.nome 
+FROM 
+    livro
+JOIN 
+    autor ON livro.autor = autor.codautor 
+JOIN 
+    editora ON livro.editora = editora.codeditora 
+ORDER BY 
+    livro.valor DESC
+LIMIT 10;

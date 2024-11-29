@@ -1,0 +1,14 @@
+SELECT 
+    vdr.nmvdd AS vendedor,
+    ROUND(SUM(vds.qtd * vds.vrunt), 2) AS valor_total_vendas,
+    ROUND(SUM(vds.qtd * vds.vrunt) * (vdr.perccomissao / 100.0), 2) AS comissao
+FROM 
+    tbvendas vds
+JOIN 
+    tbvendedor vdr ON vds.cdvdd = vdr.cdvdd
+WHERE 
+    vds.status = 'Concluído'
+GROUP BY 
+    vdr.nmvdd
+ORDER BY 
+    comissao DESC;

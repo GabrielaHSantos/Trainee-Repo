@@ -1,0 +1,11 @@
+SELECT 
+    tbvendas.estado,
+    ROUND(SUM(tbvendas.qtd * tbvendas.vrunt) * 1.0 / COUNT(tbvendas.cdven), 2) AS gastomedio
+FROM 
+    tbvendas
+WHERE 
+    tbvendas.status = 'Concluído'
+GROUP BY 
+    tbvendas.estado
+ORDER BY 
+    gastomedio DESC;
