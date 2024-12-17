@@ -343,9 +343,9 @@ resultado:
 
 <br>
 
-#### Categoria Mais Popular com Base no Número de Instalações
+#### Grafico dispersão: Categoria Mais Popular com Base no Número de Instalações
 
-Para criar o gráfico de dispersão das instalações por categoria, utilizei os dados da variável category_installs, que contém as categorias e o total de instalações em cada uma delas. Extraí as categorias para a variável categories e os totais de instalações para a variável installs.
+Para criar o gráfico de dispersão, utilizei os dados da variável *category_installs*, que contém as categorias e o total de instalações em cada uma delas. Extraí as categorias para a variável *categories* e os totais de instalações para a variável *installs*.
 
 Em seguida, usei *matplotlib.pyplot* para gerar o gráfico de dispersão com a função *plt.scatter()*, onde defini a cor dos pontos como vermelha (color='r'), o tamanho dos pontos como 100 (s=100), e adicionei a legenda label='Instalações por Categoria'. A exibição dos eixos foi ajustada com rótulos e título, além de uma rotação de 45 graus para as categorias no eixo X para melhorar a legibilidade.
 
