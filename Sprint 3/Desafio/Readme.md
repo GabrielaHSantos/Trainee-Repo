@@ -251,7 +251,13 @@ Resultado:
 
 #### Lista: Top 10 Categorias com Mais Apps
 
+Aqui está o texto formatado de forma unificada no mesmo estilo:
 
+Para listar as Top 10 categorias com mais aplicativos, utilizei o método `.value_counts()` na coluna 'Category', que retorna a contagem de ocorrências de cada categoria em ordem decrescente. Em seguida, apliquei o método `.head(10)` para selecionar apenas as 10 categorias com o maior número de aplicativos.
+
+Para exibir os resultados de forma numerada e organizada, utilizei um loop for com a função `.items()`, que retorna os pares de chave e valor (categoria e contagem). O loop enumera as categorias a partir de 1 e imprime cada uma no formato desejado.
+
+Como podemos ver no código abaixo:
 
 ``` bash
 
@@ -273,6 +279,13 @@ Resultado:
 
 #### Categoria Mais Popular com Base no Número de Instalações
 
+Para determinar a categoria mais popular com base no número de instalações, primeiro utilizei o método `.groupby()` na coluna 'Category' para agrupar os dados por categoria e, em seguida, apliquei `.sum()` na coluna 'Installs' para calcular o total de instalações em cada categoria.
+
+Com os totais calculados, utilizei `.idxmax()` para identificar a categoria com o maior número de instalações e `.max()` para obter o valor correspondente.
+
+Por fim, exibi o resultado com a função *print()*, mostrando a categoria mais popular e o total de instalações.
+
+Como podemos ver no código abaixo:
 
 ``` bash
 # Somar o número de instalações por categoria
@@ -293,10 +306,16 @@ resultadp:
 
 <br>
 
-### Graficos dos indicadores acima
+### 8. Graficos dos indicadores acima
 
 
 #### Lista: Top 10 Categorias com Mais Apps Gráfico de linha
+
+Para a criação desse grafico, extraí os dados da variável top_10_categories, que contém as categorias e suas respectivas contagens de aplicativos. Utilizei categories para armazenar as categorias e counts para as contagens de aplicativos.
+
+Em seguida, utilizei *matplotlib.pyplot* para gerar o gráfico. A função *plt.plot()* foi usada para criar a linha, com marcadores *(marker='o')* e linha contínua *(linestyle='-')*, além da cor azul (color='b'). Adicionei também título e rótulos nos eixos, rotacionando as categorias no eixo X para melhorar a visualização. A legenda foi configurada com *plt.legend()* e adicionei uma grade no gráfico com *plt.grid()*.
+
+Segue o código e o gráfico abaixo:
 
 ``` bash
 import matplotlib.pyplot as plt
@@ -323,4 +342,33 @@ resultado:
 ![linhagrafico](/Sprint%203/Evidencias/evidencias_desafio/graficolinhastop10categoriaapp.png)
 
 <br>
+
+#### Categoria Mais Popular com Base no Número de Instalações
+
+Para criar o gráfico de dispersão das instalações por categoria, utilizei os dados da variável category_installs, que contém as categorias e o total de instalações em cada uma delas. Extraí as categorias para a variável categories e os totais de instalações para a variável installs.
+
+Em seguida, usei *matplotlib.pyplot* para gerar o gráfico de dispersão com a função *plt.scatter()*, onde defini a cor dos pontos como vermelha (color='r'), o tamanho dos pontos como 100 (s=100), e adicionei a legenda label='Instalações por Categoria'. A exibição dos eixos foi ajustada com rótulos e título, além de uma rotação de 45 graus para as categorias no eixo X para melhorar a legibilidade.
+
+Segue o código e o gráfico abaixo:
+
+``` bash
+categories = category_installs.index  
+installs = category_installs.values   
+
+# Gráfico de Dispersão
+plt.figure(figsize=(10, 5))
+plt.scatter(categories, installs, color='r', s=100, label='Instalações por Categoria')
+plt.title('Instalações por Categoria (Gráfico de Dispersão)', fontsize=14)
+plt.xlabel('Categorias', fontsize=12)
+plt.ylabel('Número de Instalações', fontsize=12)
+plt.xticks(rotation=45, fontsize=8, ha='right')  
+plt.legend()
+plt.grid(True, linestyle='--', alpha=0.6)
+plt.tight_layout()
+plt.show()
+```
+
+Resultado:
+
+![](/Sprint%203/Evidencias/evidencias_desafio/graficodispersaocategoriamaispopularcmbaseinstall.png)
 
