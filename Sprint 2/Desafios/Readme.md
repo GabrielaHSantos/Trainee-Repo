@@ -8,7 +8,7 @@ Neste desafio temos como objetivo principal normalizar uma tabela do banco de da
 
 #### Bom antes de tudo vou deixar abaixo como a tabela estava e vou falar sobre o que eu realizei para normaliza-la.
 
-![tabelaantiga](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/listagemdedadosantesaltercao.png)
+![tabelaantiga](../Evidencias/evidencias_desafio_sprint_2/listagemdedadosantesaltercao.png)
 
 Como você pode ver é uma tabela unica com todas as colunas, eu optei pra evitar ter possiveis conflitos criar uma DB com o nome concessionaria e alterei o nome da que foi nos dada pra concessionaria2. E ai mais pra frente vocês verão que na hora de inserir eu transferi os dados do BD antigo pro novo normalizado.
 
@@ -34,7 +34,7 @@ CREATE TABLE Clientes (
 
 Resultado:
 
-![clientetabela](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/tabela_semresultado_clientes.png)
+![clientetabela](../Evidencias/evidencias_desafio_sprint_2/tabela_semresultado_clientes.png)
 <br>
 
 
@@ -57,7 +57,7 @@ CREATE TABLE Vendedor (
 
 Resultado:
 
-![vendedor](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/vendedor_tabela_semresult.png)
+![vendedor](../Evidencias/evidencias_desafio_sprint_2/vendedor_tabela_semresult.png)
 <br>
 
 ##### Combustivel
@@ -72,7 +72,7 @@ CREATE TABLE Combustivel (
 ```
 Resultado:
 
-![combustiveltabela](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/combustivel_semresultado.png
+![combustiveltabela](../Evidencias/evidencias_desafio_sprint_2/combustivel_semresultado.png)
 
 #### Carros
 
@@ -94,7 +94,7 @@ CREATE TABLE Carros (
 
 Resultado:
 
-![carrostabela](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/tabela_semresultado_carros.png)
+![carrostabela](../Evidencias/evidencias_desafio_sprint_2/tabela_semresultado_carros.png)
 <br>
 
 #### DatasLocacao
@@ -113,7 +113,7 @@ CREATE TABLE DatasLocacao (
 
 Resultado:
 
-![tabeladata](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/dataslocacao_semresultado.png)
+![tabeladata](../Evidencias/evidencias_desafio_sprint_2/dataslocacao_semresultado.png)
 <br>
 
 #### Locacoes
@@ -138,7 +138,7 @@ CREATE TABLE Locacoes (
 
 Resultado:
 
-![locacaotabela](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/tabela_locacoes_semresultado.png)
+![locacaotabela](../Evidencias/evidencias_desafio_sprint_2/tabela_locacoes_semresultado.png)
 <br>
 
 ### Inserção de dados da tabela Tb_locacoes para as já normalizadas 
@@ -156,7 +156,7 @@ SELECT DISTINCT idCliente, nomeCliente, cidadeCliente, estadoCliente, paisClient
 FROM concessionaria2.tb_locacao;
 ``` 
 
-![clientetabelaresultado](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/tabela_clientes.png)
+![clientetabelaresultado](../Evidencias/evidencias_desafio_sprint_2/tabela_clientes.png)
 <br>
 
 #### Vendedor
@@ -171,7 +171,7 @@ From concessionaria2.tb_locacao;
 
 Resultado:
 
-![tabelavendendorresultado](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/tabela_vendedor.png)
+![tabelavendendorresultado](../Evidencias/evidencias_desafio_sprint_2/tabela_vendedor.png)
 <br>
 
 #### Combustiveis
@@ -186,7 +186,7 @@ From concessionaria2.tb_locacao;
 
 Resultado:
 
-![resultadocomb](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/tabela_combustiveis.png)
+![resultadocomb](../Evidencias/evidencias_desafio_sprint_2/tabela_combustiveis.png)
 <br>
 
 #### Carros
@@ -201,7 +201,7 @@ From concessionaria2.tb_locacao;
 
 Resultado:
 
-![tabelacarroscmresult](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/tabela_carros.png)
+![tabelacarroscmresult](../Evidencias/evidencias_desafio_sprint_2/tabela_carros.png)
 <br>
 
 
@@ -241,7 +241,7 @@ FROM concessionaria2.tb_locacao;
 
 Resultado:
 
-![tabeladatahr](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/tabela_data_locacao.png)
+![tabeladatahr](../Evidencias/evidencias_desafio_sprint_2/tabela_data_locacao.png)
 <br>
 
 
@@ -273,7 +273,7 @@ FROM
 
 Resultado: 
 
-![locacaoresultado](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/tabela_locacoes.png)
+![locacaoresultado](../Evidencias/evidencias_desafio_sprint_2/tabela_locacoes.png)
 <br>
 
 
@@ -298,7 +298,7 @@ FROM Clientes;
 
 Resultado:
 
-![dimclientes](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/tabela_dim_clientes.png)
+![dimclientes](../Evidencias/evidencias_desafio_sprint_2/tabela_dim_clientes.png)
 <br>
 
 #### Vendedor
@@ -321,7 +321,7 @@ FROM Vendedor;
 
 Resultado:
 
-![dimvendedor](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/tabela_dim_vendedor.png)
+![dimvendedor](../Evidencias/evidencias_desafio_sprint_2/tabela_dim_vendedor.png)
 <br>
 
 
@@ -347,7 +347,7 @@ FROM Carros;
 
 Resultado:
 
-![dimcarro](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/tabela_dim_carros.png)
+![dimcarro](../Evidencias/evidencias_desafio_sprint_2/tabela_dim_carros.png)
 <br>
 
 
@@ -376,7 +376,7 @@ FROM DatasLocacao;
 
 Resultado:
 
-![dimdatas](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/tabela_dim_datas.png)
+![dimdatas](../Evidencias/evidencias_desafio_sprint_2/tabela_dim_datas.png)
 <br>
 
 
@@ -401,17 +401,17 @@ FROM
 
 Resultado:
 
-![fatolocacoes](/Sprint%202/Evidencias/evidencias_desafio_sprint_2/tabela_fato_locacoes.png)
+![fatolocacoes](../Evidencias/evidencias_desafio_sprint_2/tabela_fato_locacoes.png)
 <br>
 
 
 
 ## Modelo relacional 
 
-![modelorelacional](/Sprint%202/Evidencias/evidencia_modelos/modelo_relacional_desafio.png)
+![modelorelacional](../Evidencias/evidencia_modelos/modelo_relacional_desafio.png)
 <br>
 
 
 ## Modelo Dimensional
 
-![modelodimensional](/Sprint%202/Evidencias/evidencia_modelos/modelo_dimensional_Esquemaestrela.png)
+![modelodimensional](../Evidencias/evidencia_modelos/modelo_dimensional_Esquemaestrela.png)

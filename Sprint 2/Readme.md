@@ -23,219 +23,219 @@ Os exercicios estarão como arquivo `.txt` dentro de subpastas onde o nome delas
 
 Acesse a pasta abaixo:
 
-[Exercicio_Biblioteca](/Sprint%202/Exercicios/exercicios_sessao_3_biblioteca/)
+[Exercicio_Biblioteca](Exercicios/exercicios_sessao_3_biblioteca/)
 
 ### Exercicio 1
 
 #### Enunciado com mensagem de sucesso.
 
-![ex1cmmsgsucesso](/Sprint%202/Evidencias/evidencias_exercicio_biblioteca/exercicio01.png)
+![ex1cmmsgsucesso](Evidencias/evidencias_exercicio_biblioteca/exercicio01.png)
 
 #### Código 
 
-![codigoex1](/Sprint%202/Evidencias/evidencias_exercicio_biblioteca/exercicio01_apenascodigo.png)
+![codigoex1](Evidencias/evidencias_exercicio_biblioteca/exercicio01_apenascodigo.png)
 
 
 ### Exercicio 2
 
 #### Enunciado com mensagem de sucesso.
 
-![ex2cmmsgsucesso](/Sprint%202/Evidencias/evidencias_exercicio_biblioteca/exercicio02.png)
+![ex2cmmsgsucesso](Evidencias/evidencias_exercicio_biblioteca/exercicio02.png)
 
 #### Código 
 
-![codigoex2](/Sprint%202/Evidencias/evidencias_exercicio_biblioteca/exercicio02_apenascodigo.png)
+![codigoex2](Evidencias/evidencias_exercicio_biblioteca/exercicio02_apenascodigo.png)
 
 
 ### Exercicio 3
 
 #### Enunciado com mensagem de sucesso.
 
-![ex3cmmsgsucesso](/Sprint%202/Evidencias/evidencias_exercicio_biblioteca/exercicio03.png)
+![ex3cmmsgsucesso](Evidencias/evidencias_exercicio_biblioteca/exercicio03.png)
 
 #### Código 
 
-![codigoex3](/Sprint%202/Evidencias/evidencias_exercicio_biblioteca/exercicio03_apenascodigo.png)
+![codigoex3](Evidencias/evidencias_exercicio_biblioteca/exercicio03_apenascodigo.png)
 
 
 ### Exercicio 4
 
 #### Enunciado com mensagem de sucesso.
 
-![ex4cmmsgsucesso](/Sprint%202/Evidencias/evidencias_exercicio_biblioteca/exercicio04.png)
+![ex4cmmsgsucesso](Evidencias/evidencias_exercicio_biblioteca/exercicio04.png)
 
 #### Código
 
-![codigoex4](/Sprint%202/Evidencias/evidencias_exercicio_biblioteca/exercicio04_apenascodigo.png)
+![codigoex4](Evidencias/evidencias_exercicio_biblioteca/exercicio04_apenascodigo.png)
 
 
 ### Exercicio 5
 
 #### Enunciado com mensagem de sucesso.
 
-![ex5msgsucesso](/Sprint%202/Evidencias/evidencias_exercicio_biblioteca/exercicio05.png)
+![ex5msgsucesso](Evidencias/evidencias_exercicio_biblioteca/exercicio05.png)
 
 #### Código
 
-![codigoex5](/Sprint%202/Evidencias/evidencias_exercicio_biblioteca/exercicio05_apenascodigo.png)
+![codigoex5](Evidencias/evidencias_exercicio_biblioteca/exercicio05_apenascodigo.png)
 
 
 ### Exercicio 6
 
 #### Enunciado com mensagem de sucesso.
 
-![ex6msgsucesso](/Sprint%202/Evidencias/evidencias_exercicio_biblioteca/exercicio06.png)
+![ex6msgsucesso](Evidencias/evidencias_exercicio_biblioteca/exercicio06.png)
 
 #### Código
 
-![codigoex6](/Sprint%202/Evidencias/evidencias_exercicio_biblioteca/exercicio06_apenascodigo.png)
+![codigoex6](Evidencias/evidencias_exercicio_biblioteca/exercicio06_apenascodigo.png)
 
 
 ### Exercicio 7
 
 #### Enunciado com mensagem de sucesso.
 
-![ex7msgsucesso](/Sprint%202/Evidencias/evidencias_exercicio_biblioteca/exercicio07.png)
+![ex7msgsucesso](Evidencias/evidencias_exercicio_biblioteca/exercicio07.png)
 
 #### Código
 
-![codigoex7](/Sprint%202/Evidencias/evidencias_exercicio_biblioteca/exercicio07_apenasocodigo.png)
+![codigoex7](Evidencias/evidencias_exercicio_biblioteca/exercicio07_apenasocodigo.png)
 
 
 ## Exercicio Loja
 
 Acesse a pasta abaixo:
 
-[Exercicio_Loja](/Sprint%202/Exercicios/exercicios_sessao_4_loja/)
+[Exercicio_Loja](Exercicios/exercicios_sessao_4_loja/)
 
 ### Exercicio 8
 
 #### Enunciado com mensagem de sucesso.
 
-![ex8msgsucesso](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio8.png)
+![ex8msgsucesso](Evidencias/evidencias_exercicio_loja/exercicio8.png)
 
 #### Código
 
-![cogex8](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio8_apenascodigoloja.png)
+![cogex8](Evidencias/evidencias_exercicio_loja/exercicio8_apenascodigoloja.png)
 
 
 ### Exercicio 9
 
 #### Enunciado com mensagem de sucesso.
 
-![ex9msgsucesso](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio9.png)
+![ex9msgsucesso](Evidencias/evidencias_exercicio_loja/exercicio9.png)
 
 #### Código
 
-![codex9](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio9_apenascodigoloja.png)
+![codex9](Evidencias/evidencias_exercicio_loja/exercicio9_apenascodigoloja.png)
 
 
 ### Exercicio 10
 
 #### Enunciado com mensagem de sucesso.
 
-![ex10msgsucesso](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio10.png)
+![ex10msgsucesso](Evidencias/evidencias_exercicio_loja/exercicio10.png)
 
 #### Código
 
-![codigoex10](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio10_apenascodigoloja.png)
+![codigoex10](Evidencias/evidencias_exercicio_loja/exercicio10_apenascodigoloja.png)
 
 
 ### Exercicio 11
 
 #### Enunciado com mensagem de sucesso.
 
-![ex11msgsucesso](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio11.png)
+![ex11msgsucesso](Evidencias/evidencias_exercicio_loja/exercicio11.png)
 
 #### Código
 
-![codigoex11](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio11_apenasocodigoloja.png)
+![codigoex11](Evidencias/evidencias_exercicio_loja/exercicio11_apenasocodigoloja.png)
 
 
 ### Exercicio 12
 
 #### Enunciado com mensagem de sucesso.
 
-![ex12msgsucesso](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio12.png)
+![ex12msgsucesso](Evidencias/evidencias_exercicio_loja/exercicio12.png)
 
 #### Código
 
-![codigoex12](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio12_apenascodigoloja.png)
+![codigoex12](Evidencias/evidencias_exercicio_loja/exercicio12_apenascodigoloja.png)
 
 
 ### Exercicio 13
 
 #### Enunciado com mensagem de sucesso.
 
-![ex13msgsucesso](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio13.png)
+![ex13msgsucesso](Evidencias/evidencias_exercicio_loja/exercicio13.png)
 
 #### Código
 
-![codigo13](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio13_apenascodigoloja.png)
+![codigo13](Evidencias/evidencias_exercicio_loja/exercicio13_apenascodigoloja.png)
 
 
 ### Exercicio 14
 
 #### Enunciado com mensagem de sucesso.
 
-![ex14msgsucesso](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio14.png)
+![ex14msgsucesso](Evidencias/evidencias_exercicio_loja/exercicio14.png)
 
 #### Código
 
-![codigoex14](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio14_apenascodigoloja.png)
+![codigoex14](Evidencias/evidencias_exercicio_loja/exercicio14_apenascodigoloja.png)
 
 
 ### Exercicio 15
 
 #### Enunciado com mensagem de sucesso.
 
-![ex15msgsucesso](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio15.png)
+![ex15msgsucesso](Evidencias/evidencias_exercicio_loja/exercicio15.png)
 
 #### Código
 
-![codigoex15](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio15_apenascodigoloja.png)
+![codigoex15](Evidencias/evidencias_exercicio_loja/exercicio15_apenascodigoloja.png)
 
 
 ### Exercicio 16
 
 #### Enunciado com mensagem de sucesso.
 
-![ex16msgsucesso](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio16.png)
+![ex16msgsucesso](Evidencias/evidencias_exercicio_loja/exercicio16.png)
 
 #### Código
 
-![codigoex16](/Sprint%202/Evidencias/evidencias_exercicio_loja/exercicio16_apenascodigoloja.png)
+![codigoex16](Evidencias/evidencias_exercicio_loja/exercicio16_apenascodigoloja.png)
 
 
 ## Exercicio de Exportação (Sessão 6)
 
 Acesse a pasta abaixo:
 
-[Exercicio_exportação](/Sprint%202/Exercicios/execicios_sessao_6_exercicio_exportacao_dados/)
+[Exercicio_exportação](Exercicios/execicios_sessao_6_exercicio_exportacao_dados/)
 
 ### Etapa 1 - Exercicio Livros Mais Caros
 
 
 
-![sessao6etapa1](/Sprint%202/Evidencias/evidencias_sessao6_exercicios/sessao6etapa1_exerciciolivrosmaiscaros.png)
+![sessao6etapa1](Evidencias/evidencias_sessao6_exercicios/sessao6etapa1_exerciciolivrosmaiscaros.png)
 
 ### Resultado no csv
 
-![csvetapa1](/Sprint%202/Evidencias/evidencias_sessao6_exercicios/etapa1.png)
+![csvetapa1](Evidencias/evidencias_sessao6_exercicios/etapa1.png)
 
 ### Etapa 2 - Exercicio 5 Editoras com mais quantidade de vendas
 
-![sessao6etapa2](/Sprint%202/Evidencias/evidencias_sessao6_exercicios/sessao6etapa2_exercicio5editorascmmaisvenda.png)
+![sessao6etapa2](Evidencias/evidencias_sessao6_exercicios/sessao6etapa2_exercicio5editorascmmaisvenda.png)
 
 ### Resultado no csv
 
-![csvetapa2](/Sprint%202/Evidencias/evidencias_sessao6_exercicios/etapa2.png)
+![csvetapa2](Evidencias/evidencias_sessao6_exercicios/etapa2.png)
 
 # Certificados
 
 Dentro da pasta *`Certificados`* está localizado o certificado da *`AWS`* 
 
-Acesse o certificado [aqui](/Sprint%202/Certificados/13660_3_6730630_1732985156_AWS%20Course%20Completion%20Certificate.pdf) 
+Acesse o certificado [aqui](Certificados/13660_3_6730630_1732985156_AWS%20Course%20Completion%20Certificate.pdf) 
 
 
 

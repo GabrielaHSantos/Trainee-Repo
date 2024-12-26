@@ -10,18 +10,18 @@ O curso aborda inicialmente conceitos básicos, como variáveis e operadores. Em
 
 # Exercícios
 
-[Exercicios Sessâo 3](/Sprint%203/Exercicios/exercicios_sessao3/exerciciossessao3.ipynb)
+[Exercicios Sessâo 3](Exercicios/exercicios_sessao3/exerciciossessao3.ipynb)
 
-[Exercicios Sessão 4](/Sprint%203/Exercicios/exercicios_sessao4/exerciciosessao4.ipynb)
+[Exercicios Sessão 4](Exercicios/exercicios_sessao4/exerciciosessao4.ipynb)
 
-[Exercicio Sessão 5: ETL](/Sprint%203/Exercicios/exercicio_sessao5)
+[Exercicio Sessão 5: ETL](Exercicios/exercicio_sessao5)
 
 # Evidências
 
-Acesse as *`evidencias`* do exercicio da Sessão 5 ETL clicando [aqui](/Sprint%203/Evidencias/evidencias_exercicio/evidencia_sessao5)
+Acesse as *`evidencias`* do exercicio da Sessão 5 ETL clicando [aqui](Evidencias/evidencias_exercicio/evidencia_sessao5)
 
 # Certificados
 
 Dentro da pasta *`Certificados`* está localizado o certificado da *`AWS`* 
 
-Acesse o certificado [aqui](/Sprint%203/Certificados/certificado_aspectos_nuvem.pdf) 
+Acesse o certificado [aqui](Certificados/certificado_aspectos_nuvem.pdf) 
