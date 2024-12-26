@@ -47,7 +47,7 @@ data.head()
 
 Resultado:
 
-![retornolinhas](/Sprint%203/Evidencias/evidencias_desafio/linhasconfirmandoleituraarquivo.png)
+![retornolinhas](../Evidencias/evidencias_desafio/linhasconfirmandoleituraarquivo.png)
 
 <br>
 
@@ -88,7 +88,7 @@ print(f"Quantidade de duplicatas removidas: {duplicatas}")
 
 Resultado:
 
-![respostaremocaoduplicatas](/Sprint%203/Evidencias/evidencias_desafio/resultadoremocaodupli.png)
+![respostaremocaoduplicatas](../Evidencias/evidencias_desafio/resultadoremocaodupli.png)
 
 ### 2. Grafico de barras: Top 5 apps por numero de instalações
 
@@ -133,7 +133,7 @@ plt.show()
 ```
 
 Resultado:
-![barras](/Sprint%203/Evidencias/evidencias_desafio/grafico_barras_top5appsinstalacoes.png)
+![barras](../Evidencias/evidencias_desafio/grafico_barras_top5appsinstalacoes.png)
 
 
 ### 3. Grafico de pizza: Categorias por Frequência de Aparição
@@ -175,7 +175,7 @@ plt.show()
 ```
 
 Resultado:
-![pizza](/Sprint%203/Evidencias/evidencias_desafio/grafico_pizza_categoriasporfrequenciaparicao.png)
+![pizza](../Evidencias/evidencias_desafio/grafico_pizza_categoriasporfrequenciaparicao.png)
 
 
 ### 4. Exibindo App Mais Caro 
@@ -192,7 +192,7 @@ app_mais_caro[['App', 'Price']]
 
 Resultado:
 
-![app+caro](/Sprint%203/Evidencias/evidencias_desafio/appmaiscaro.png)
+![app+caro](../Evidencias/evidencias_desafio/appmaiscaro.png)
 
 
 ### 5. Contagem de apps classificados como "Mature 17+"
@@ -209,7 +209,7 @@ print(f"Quantidade de aplicativos classificados como 'Mature 17+': {mature_17_co
 
 Resultado:
 
-![mature+17](/Sprint%203/Evidencias/evidencias_desafio/contagemappclassmature+17.png)
+![mature+17](../Evidencias/evidencias_desafio/contagemappclassmature+17.png)
 
 <br>
 
@@ -244,7 +244,7 @@ print(top_10_reviews)
 
 Resultado:
 
-![top10appporreview](/Sprint%203/Evidencias/evidencias_desafio/top10appspornumerodereviews.png)
+![top10appporreview](../Evidencias/evidencias_desafio/top10appspornumerodereviews.png)
 
 
 ### 7. Criar pelo menos 2 calculos sobre o dataset e apresentar um em formato de lista e outro em formato de valor
@@ -272,7 +272,7 @@ for i, (category, count) in enumerate(top_10_categories.items(), 1):
 
 Resultado:
 
-![top10categoriacmmaisapp](/Sprint%203/Evidencias/evidencias_desafio/top10categoriascmmaisapps.png)
+![top10categoriacmmaisapp](../Evidencias/evidencias_desafio/top10categoriascmmaisapps.png)
 
 
 <br>
@@ -302,7 +302,7 @@ print(f"A categoria mais popular é: {most_popular_category}, com {most_popular_
 
 resultadp:
 
-![categmaispopularporinstal](/Sprint%203/Evidencias/evidencias_desafio/categoriamaispopularcmbaseinstalls.png)
+![categmaispopularporinstal](../Evidencias/evidencias_desafio/categoriamaispopularcmbaseinstalls.png)
 
 <br>
 
@@ -339,7 +339,7 @@ plt.show()
 
 resultado:
 
-![linhagrafico](/Sprint%203/Evidencias/evidencias_desafio/graficolinhastop10categoriaapp.png)
+![linhagrafico](../Evidencias/evidencias_desafio/graficolinhastop10categoriaapp.png)
 
 <br>
 
@@ -370,5 +370,5 @@ plt.show()
 
 Resultado:
 
-![](/Sprint%203/Evidencias/evidencias_desafio/graficodispersaocategoriamaispopularcmbaseinstall.png)
+![disperçãograficos](../Evidencias/evidencias_desafio/graficodispersaocategoriamaispopularcmbaseinstall.png)
 
