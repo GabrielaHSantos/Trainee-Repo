@@ -20,3 +20,5 @@ Acesse as *`evidencias`* do exercicio clicando [aqui](../Sprint%205/Evidencias)
 # Certificados
 
 Acesse os certificados [aqui](../Sprint%205/Certificados) 
+
+Link para o certificado Cloudquest [aqui](https://www.credly.com/badges/c7bd25c3-880a-4e28-99c5-96d99f344dfb)
