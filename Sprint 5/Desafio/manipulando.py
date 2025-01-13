@@ -75,7 +75,7 @@ def upload_novo_arquivo(nome_bucket, df_resultante, nome_arquivo_original):
     
     # Salvar o DataFrame em um buffer de string com separador ';'
     csv_buffer = StringIO()
-    df_resultante.to_csv(csv_buffer, index=False, sep=';', encoding='utf-8')  # Usando ponto e vírgula como separador
+    df_resultante.to_csv(csv_buffer, index=False, sep=';', encoding='utf-8')  
     
     # Fazer upload do arquivo para o S3
     s3 = boto3.client('s3')
