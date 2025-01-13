@@ -66,6 +66,7 @@ def criando_bucket(nome_bucket, regiao='us-east-1'):
     except ClientError as e:
         print(f"Erro ao criar ou verificar o bucket: {e}")
 
+
 def upload_arquivo(nome_bucket, file_path, s3_key):
     try:
         s3.upload_file(file_path, nome_bucket, s3_key)
