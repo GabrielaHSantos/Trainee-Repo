@@ -1,6 +1,6 @@
 # Sobre
 
-Nosso objetivo foi aplicar os conhecimentos adquiridos sobre AWS e Python. Trabalhamos com um arquivo CSV, baixado do site dados.gov.br, onde realizamos manipulações nos dados localmente e, em seguida, enviamos o arquivo processado para um bucket no AWS S3.
+Nosso objetivo foi aplicar os conhecimentos adquiridos sobre AWS e Python. Trabalhamos com um arquivo CSV, baixado do site dados.gov.br, onde realizamos manipulações nos dados localmente e, em seguida, enviamos o arquivo processado para um bucket no AWS S3 através de um script python.
 
 
 # Instruções, como foi realizado de fato o desafio.
