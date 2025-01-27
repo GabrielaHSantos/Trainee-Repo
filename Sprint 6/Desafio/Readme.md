@@ -189,7 +189,7 @@ Eu pensei nessa pergunta porque ela ajuda a entender a representatividade das mu
 
 ### 2 Quais artistas femininas têm mais destaque em séries de comédia?
 
-Já qui, o foco é reconhecer as artistas mulheres que se destacaram no gênero, seja como atrizes, roteiristas, diretoras ou produtoras. Isso valoriza o trabalho delas e pode inspirar mais inclusão e oportunidades para artistas femininas.
+Já aqui, o foco é reconhecer as artistas mulheres que se destacaram no gênero, seja como atrizes, roteiristas, diretoras ou produtoras. Isso valoriza o trabalho delas e pode inspirar mais inclusão e oportunidades para artistas femininas.
 
 ### 3 Como a participação de artistas femininas em séries de comédia evoluiu ao longo dos anos?
 
