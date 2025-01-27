@@ -183,3 +183,22 @@ resultado pos executar:
 
 # Perguntas Selecionadas
 
+### 1 Qual é a média de artistas femininas em séries de comédia?
+
+Eu pensei nessa pergunta porque ela ajuda a entender a representatividade das mulheres no gênero. Saber quantas artistas femininas estão envolvidas em séries de comédia pode revelar se há equilíbrio de gênero ou se ainda existe uma disparidade que precisa ser discutida.
+
+### 2 Quais artistas femininas têm mais destaque em séries de comédia?
+
+Já qui, o foco é reconhecer as artistas mulheres que se destacaram no gênero, seja como atrizes, roteiristas, diretoras ou produtoras. Isso valoriza o trabalho delas e pode inspirar mais inclusão e oportunidades para artistas femininas.
+
+### 3 Como a participação de artistas femininas em séries de comédia evoluiu ao longo dos anos?
+
+Essa pergunta analisa a trajetória da representatividade feminina no gênero. Verificar se houve um aumento ou diminuição na participação de mulheres ao longo do tempo pode indicar tendências e mudanças na indústria.
+
+### Quais animações com protagonistas femininas tiveram maior sucesso?
+
+Bom, o foco é identificar produções animadas lideradas por personagens femininas que foram bem recebidas pelo público e pela crítica. Isso pode mostrar o potencial de histórias centradas em mulheres e inspirar mais produções nesse sentido.
+
+### Quais séries de animação com artistas femininas têm as maiores notas médias?
+
+Essa pergunta foca na representatividade feminina, destacando as produções de maior qualidade que contaram com a participação de mulheres
