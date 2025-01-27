@@ -195,10 +195,10 @@ Já aqui, o foco é reconhecer as artistas mulheres que se destacaram no gênero
 
 Essa pergunta analisa a trajetória da representatividade feminina no gênero. Verificar se houve um aumento ou diminuição na participação de mulheres ao longo do tempo pode indicar tendências e mudanças na indústria.
 
-### Quais animações com protagonistas femininas tiveram maior sucesso?
+### 4 Quais animações com protagonistas femininas tiveram maior sucesso?
 
 Bom, o foco é identificar produções animadas lideradas por personagens femininas que foram bem recebidas pelo público e pela crítica. Isso pode mostrar o potencial de histórias centradas em mulheres e inspirar mais produções nesse sentido.
 
-### Quais séries de animação com artistas femininas têm as maiores notas médias?
+### 5 Quais séries de animação com artistas femininas têm as maiores notas médias?
 
 Essa pergunta foca na representatividade feminina, destacando as produções de maior qualidade que contaram com a participação de mulheres
