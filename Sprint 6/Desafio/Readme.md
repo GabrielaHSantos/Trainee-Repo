@@ -16,6 +16,8 @@ Código usado no terminal para instalação das bibliotecas:
 pip install boto3
 ```
 
+*OBS*: O Arquivo filmes e series .zip nos é disponibilizado no desafio e por ser muito grande mesmo zipado nos foi recomendado apenas alertar onde baixa-lo para executar o desafio ao invés de uparmos ele no github.
+
 ### Configuração do AWS CLI
 
 A configuração do AWS CLI foi detalhada na Sprint anterior. Para configurar o acesso à AWS, siga as instruções fornecidas no README da Sprint 5. Certifique-se de que o AWS CLI está configurado corretamente e que você está autenticado usando o comando:
