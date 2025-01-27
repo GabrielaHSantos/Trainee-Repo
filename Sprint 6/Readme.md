@@ -39,7 +39,9 @@ Neste curso, aprendemos os conceitos básicos do Amazon QuickSight, começando c
 
 # Exercícios
 
-[Exercício Lab Athena]()
+[Exercício Lab Athena](../Sprint%206/Exercicios/exercicioathena.md)
+
+[Exercicio Lambda](../Sprint%206/Exercicios/exerciciolambda.md)
 
 # Evidências
 
