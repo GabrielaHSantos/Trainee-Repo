@@ -179,3 +179,7 @@ resultado pos executar:
 #### Arquivos CSV Carregados no S3:
 
 ![arquivocaminho](../Evidencias/desafio/caminhobucketcsv.png)
+
+
+# Perguntas Selecionadas
+
