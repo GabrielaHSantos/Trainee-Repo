@@ -13,7 +13,9 @@ REGIAO = "us-east-1"
 CAMINHO_RAW = "Raw/Local/CSV"
 
 def criar_bucket(nome_bucket, regiao="us-east-1"):
-    """Cria o bucket no S3 se ele não existir."""
+    
+    #Cria o bucket no S3 se ele não existir.
+
     try:
         # Listar buckets existentes
         resposta = s3.list_buckets()
@@ -35,7 +37,7 @@ def criar_bucket(nome_bucket, regiao="us-east-1"):
         print(f"Erro ao criar/verificar o bucket: {e}")
 
 def enviar_para_s3(arquivo_zip, tipo_arquivo):
-    """Carrega um arquivo CSV diretamente do ZIP para o S3."""
+    # Carrega um arquivo CSV diretamente do ZIP para o S3.
     try:
         # Extrair informações de data para o caminho no S3
         agora = datetime.now()
