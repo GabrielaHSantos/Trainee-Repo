@@ -98,7 +98,7 @@ def salvar_no_s3(dados, tipo_dado):
 
 ### Implementando a Função AWS Lambda
 
-A função Lambda busca dados apenas de filmes e séries dos gêneros "Comédia" e "Animação" do TMDB e os salva no S3.
+ A função Lambda faz a ingestão de dados dos gêneros "Comédia" e "Animação" do TMDB e os armazena no S3.
 
 ```python
 def lambda_handler(event, context):
