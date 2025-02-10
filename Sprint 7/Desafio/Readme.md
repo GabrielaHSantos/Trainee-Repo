@@ -25,6 +25,15 @@ pip install boto3 -t python/
 Compress-Archive -Path python -DestinationPath C:\Users\Gabriel\camada_lambda_dependencias.zip
 ```
 
+### Dando permissão no IAM pra função
+
+Para conceder permissão total ao S3 para minha função Lambda *ingestaodadostmdb*, acessei o AWS IAM, fui até a seção Funções e encontrei a função ingestaodadostmdb. Em seguida, entrei na aba Permissões, cliquei em Anexar políticas, busquei por `AmazonS3FullAccess` e selecionei essa política. Por fim, cliquei em Anexar política para finalizar o processo
+
+Resultado da ingestão com a politica no IAM.
+
+
+![permissaoiam](../Evidencias/evidenciadesafio/dandopermissoesprafunção.png)
+
 ### Criando variável de ambiente para a chave API
 
 *OBS*: A API TMDB exige uma chave de acesso. Ela deve ser armazenada de forma segura e não deve ser exposta no código-fonte. Para realizar isso, eu fui nas configurações e coloquei a chave API nas variáveis de ambiente. Imagem abaixo do local onde colocamos a chave API.
