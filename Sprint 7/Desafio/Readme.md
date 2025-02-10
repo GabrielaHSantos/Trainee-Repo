@@ -29,8 +29,6 @@ Compress-Archive -Path python -DestinationPath C:\Users\Gabriel\camada_lambda_de
 
 Para conceder permissão total ao S3 para minha função Lambda *ingestaodadostmdb*, acessei o AWS IAM, fui até a seção Funções e encontrei a função ingestaodadostmdb. Em seguida, entrei na aba Permissões, cliquei em Anexar políticas, busquei por `AmazonS3FullAccess` e selecionei essa política. Por fim, cliquei em Anexar política para finalizar o processo
 
-Resultado da ingestão com a politica no IAM.
-
 
 ![permissaoiam](../Evidencias/evidenciadesafio/dandopermissoesprafunção.png)
 
