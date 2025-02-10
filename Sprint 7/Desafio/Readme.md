@@ -8,7 +8,7 @@ Nosso objetivo foi aplicar os conhecimentos adquiridos sobre AWS, Python e etc n
 
 - **Bibliotecas usadas**: `boto3`, `requests`, `json`, `os`, `datetime` e `botocore` (dependência do `boto3`).
 
-Essa parte das bibliotecas tivemos de realizar as instalações delas localmente, eu as coloquei dentro de um dir `python` e as compactei como *camada_lamda.zip* e após isso dentro do lambda na parte de camadas criei a camada *camada_lambda_dependencias* e realizei o upload do arquivo *.zip*.
+Essa parte das bibliotecas tivemos de realizar as instalações delas localmente, eu as coloquei dentro de um dir `python` e as compactei como *camada_lamda_dependencias.zip* e após isso dentro do lambda na parte de camadas criei a camada *camada_lambda_dependencias* e realizei o upload do arquivo *.zip*.
 
 #### A "camada_lambda_dependencias" dentro das camadas no lambda.
 ![camada](../Evidencias/evidenciadesafio/camadacriadanascamadas.png)
