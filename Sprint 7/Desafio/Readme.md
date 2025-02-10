@@ -4,7 +4,7 @@ Nosso objetivo foi aplicar os conhecimentos adquiridos sobre AWS, Python e etc n
 
 # Instruções: Como foi realizado o desafio
 
-#### Antes de começar a explicar o código, precisamos realizar algumas configurações:
+#### Antes de começar a explicar o código, precisamos realizar algumas configurações(já com a função criada na parte de funções do lambda) :
 
 - **Bibliotecas usadas**: `boto3`, `requests`, `json`, `os`, `datetime` e `botocore` (dependência do `boto3`).
 
