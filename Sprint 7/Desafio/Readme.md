@@ -28,7 +28,7 @@ Compress-Archive -Path python -DestinationPath C:\Users\Gabriel\camada_lambda_de
 
 ### Criando variável de ambiente pra chave API
 
-*OBS*: A API TMDB exige uma chave de acesso. Ela deve ser armazenada de forma segura e não deve ser exposta no código-fonte. Para realizar isso, eu fui nas configurações e coloque a chave api nas variáveis de ambiente. Imagem abaixo do local onde colocamos a api.
+*OBS*: A API TMDB exige uma chave de acesso. Ela deve ser armazenada de forma segura e não deve ser exposta no código-fonte. Para realizar isso, eu fui nas configurações e coloque a chave api nas variáveis de ambiente. Imagem abaixo do local onde colocamos a chave api.
 
 ![configvarambien](../Evidencias/evidenciadesafio/variaveldemabienet.png)
 
