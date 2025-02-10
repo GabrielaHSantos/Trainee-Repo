@@ -8,13 +8,12 @@ Nosso objetivo foi aplicar os conhecimentos adquiridos sobre AWS, Python e etc n
 
 - **Bibliotecas usadas**: `boto3`, `requests`, `json`, `os`, `datetime` e `botocore` (dependência do `boto3`).
 
-
-Essa parte das bibliotecas tivemos de realizar as instalações delas localmente, eu as coloquei dentro de um dir `python`e as compactei como  *camada_lamda.zip* e após isso dentro do lambda na parte de camadas criei a camada *camada_lambda_dependencias* e realizei o upload do arquivo *.zip*. 
+Essa parte das bibliotecas tivemos de realizar as instalações delas localmente, eu as coloquei dentro de um dir `python` e as compactei como *camada_lamda.zip* e após isso dentro do lambda na parte de camadas criei a camada *camada_lambda_dependencias* e realizei o upload do arquivo *.zip*.
 
 #### A "camada_lambda_dependencias" dentro das camadas no lambda.
 ![camada](../Evidencias/evidenciadesafio/camadacriadanascamadas.png)
 
-Código usado no terminal para criação dos diretorios, instalação das bibliotecas e compactação pra zip:
+Código usado no terminal para criação dos diretórios, instalação das bibliotecas e compactação para zip:
 
 ``` powershell
 mkdir camada_lambda_dependencias
@@ -26,12 +25,11 @@ pip install boto3 -t python/
 Compress-Archive -Path python -DestinationPath C:\Users\Gabriel\camada_lambda_dependencias.zip
 ```
 
-### Criando variável de ambiente pra chave API
+### Criando variável de ambiente para a chave API
 
-*OBS*: A API TMDB exige uma chave de acesso. Ela deve ser armazenada de forma segura e não deve ser exposta no código-fonte. Para realizar isso, eu fui nas configurações e coloque a chave api nas variáveis de ambiente. Imagem abaixo do local onde colocamos a chave api.
+*OBS*: A API TMDB exige uma chave de acesso. Ela deve ser armazenada de forma segura e não deve ser exposta no código-fonte. Para realizar isso, eu fui nas configurações e coloquei a chave API nas variáveis de ambiente. Imagem abaixo do local onde colocamos a chave API.
 
 ![configvarambien](../Evidencias/evidenciadesafio/variaveldemabienet.png)
-
 
 #### Configuração do cliente S3
 
@@ -52,24 +50,33 @@ API_KEY = os.getenv("TMDB_API_KEY")
 
 *OBS*: Utilizei o bucket da Sprint passada
 
-<p>
-
 ### Função para buscar dados da API TMDB
 
-A função `buscar_dados_tmdb` coleta informações de filmes e séries e os agrupa em arquivos JSON de até 100 registros.
+A função `obter_dados_tmdb` busca dados apenas dos gêneros "Comédia" e "Animação", tanto para filmes quanto para séries.
 
 ```python
-def buscar_dados_tmdb(endpoint, params={}):
-    url = f"https://api.themoviedb.org/3/{endpoint}"
-    params["api_key"] = API_KEY
-    response = requests.get(url, params=params)
-    if response.status_code == 200:
-        return response.json()
-    else:
-        print(f"Erro na requisição: {response.status_code}")
-        return None
-```
+def obter_dados_tmdb(genero, ano_limite="2022", eh_serie=False):
+    dados = []
+    ids_processados = set()
+    tipo_conteudo = "tv" if eh_serie else "movie"
 
+    for pagina in range(1, 51):
+        url = f"https://api.themoviedb.org/3/discover/{tipo_conteudo}?api_key={API_KEY}&language=pt-BR&with_genres={genero}&page={pagina}&sort_by=popularity.desc&primary_release_year={ano_limite}"
+        resposta = requests.get(url)
+        
+        if resposta.status_code == 200:
+            dados_pagina = resposta.json().get("results", [])
+            if not dados_pagina:
+                break
+            novos_dados = [item for item in dados_pagina if item['id'] not in ids_processados]
+            dados.extend(novos_dados)
+            ids_processados.update([item['id'] for item in novos_dados])
+        else:
+            print(f"Erro ao buscar dados: {resposta.status_code}")
+            break
+    
+    return dados
+```
 
 ### Salvando os Dados no raw do bucket da S3
 
@@ -91,60 +98,39 @@ def salvar_no_s3(dados, tipo_dado):
 
 ### Implementando a Função AWS Lambda
 
-A função Lambda busca dados de filmes populares e séries de TV do TMDB e os salva no S3.
+A função Lambda busca dados apenas de filmes e séries dos gêneros "Comédia" e "Animação" do TMDB e os salva no S3.
 
 ```python
 def lambda_handler(event, context):
-    filmes = buscar_dados_tmdb("movie/popular")
-    series = buscar_dados_tmdb("tv/popular")
+    print("Iniciando a ingestão de dados da TMDB...")
     
-    if filmes:
-        salvar_no_s3(filmes["results"], "Filmes")
-    if series:
-        salvar_no_s3(series["results"], "Series")
-
+    dados_animacao_filmes = obter_dados_tmdb(genero="16", ano_limite="2022", eh_serie=False)
+    dados_comedia_filmes = obter_dados_tmdb(genero="35", ano_limite="2022", eh_serie=False)
+    dados_animacao_series = obter_dados_tmdb(genero="16", ano_limite="2022", eh_serie=True)
+    dados_comedia_series = obter_dados_tmdb(genero="35", ano_limite="2022", eh_serie=True)
+    
+    dados_combinados = dados_animacao_filmes + dados_comedia_filmes + dados_animacao_series + dados_comedia_series
+    
+    if dados_combinados:
+        salvar_no_s3(dados_combinados, "FilmesSeries")
+    
     return {
         "statusCode": 200,
-        "body": "Ingestão concluída com sucesso!"
+        "mensagem": "Ingestão concluída! Dados de Comédia e Animação processados."
     }
 ```
 
-### Dando permissão no IAM pra função
-
-Para conceder permissão total ao S3 para minha função Lambda *ingestaodadostmdb*, acessei o AWS IAM, fui até a seção Funções e encontrei a função ingestaodadostmdb. Em seguida, entrei na aba Permissões, cliquei em Anexar políticas, busquei por `AmazonS3FullAccess` e selecionei essa política. Por fim, cliquei em Anexar política para finalizar o processo
-
-Resultado da ingestão com a politica no IAM.
-
-
-![permissaoiam](../Evidencias/evidenciadesafio/dandopermissoesprafunção.png)
-
-
-# Resultado
-
-### Código no lambda
-
-Coloquei metade do codigo pois foi o que coube na print mas é o código presente em `funcaolambda.py`
-
-![codigonalambda](../Evidencias/evidenciadesafio/codigonolambda.png)
-
-### Bucket no S3
+### Resultado
 
 #### Antes da execução:
 ![bucketantes](../Evidencias/evidenciadesafio/bucketantesdaexec.png)
 
-
-#### Lambda mostrando que o codigo foi executado com sucesso no log
-
+#### Lambda mostrando que o código foi executado com sucesso no log
 ![sucesso](../Evidencias/evidenciadesafio/executadocmsucesso.png)
 
 #### Depois da execução:
 ![bucketdepois](../Evidencias/evidenciadesafio/s3posexece1.png)
 
-#### *Atenção* ao caminho que se encontra no pedido ao desafio e a imagem abaixo mostra os Arquivos JSON carregados no S3
-
-![bucketdps2](../Evidencias/evidenciadesafio/s4posexece2.png)
-
-
-### Arquivo json gerado. usei ctrl+f e pesquisei pelo "id": pra ter certeza que tinham 100 registros 
-
+#### Arquivo JSON gerado:
 ![arquivojson](../Evidencias/evidenciadesafio/arquivojson.png)
+
