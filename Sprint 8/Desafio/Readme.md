@@ -57,13 +57,13 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
-# Caminho correto dos arquivos CSV na Raw Zone (ajustado para pegar todas as datas)
+# Caminho correto dos arquivos CSV na Raw Zone 
 s3_input_filmes = "s3://data-lake-sprint6/Raw/Local/CSV/Filmes/"
 s3_input_series = "s3://data-lake-sprint6/Raw/Local/CSV/Series/"
 
 # Definir o esquema manualmente para os arquivos CSV
 schema = StructType([
-    StructField("id", StringType(), True),  # Alterado para StringType para evitar problemas com IDs
+    StructField("id", StringType(), True),  
     StructField("tituloPincipal", StringType(), True),
     StructField("tituloOriginal", StringType(), True),
     StructField("anoLancamento", IntegerType(), True),
