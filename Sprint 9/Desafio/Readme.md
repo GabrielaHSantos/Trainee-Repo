@@ -337,3 +337,24 @@ s3://data-lake-sprint6/Refined/rel_jogos_filmes_series/
 
 
 ![refined](../Evidencias/pastasdentrorefined.png)
+
+
+## Resultado requisições no Athena
+
+### Fatos filmes
+
+![fatosfilmes](../Evidencias/fatos_filmes.png)
+
+### Fatos Series
+
+![fatosseires](../Evidencias/fatos_series.png)
+
+### Dim Jogos
+
+![dimjogos](../Evidencias/dim_jogos.png)
+
+### Dim Franquias
+
+![dimfranquias](../Evidencias/dim_franquias.png)
+
+
