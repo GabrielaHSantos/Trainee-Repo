@@ -36,9 +36,9 @@ Diagrama da Modelagem de Dados
 ![diagrama](../Evidencias/modelagem_dimensionalrefined.png)
 
 
-# Job 2: Processamento de Dados JSON para Camada Trusted
+# Job de Processamento de Dados da Camada Trusted para camada Refined
 
-Este job é responsável por transformar os dados de filmes, séries e jogos que foram salvos na camada Trusted e organizá-los na camada Refined, aplicando processos de limpeza, integração e criação de tabelas de fato e dimensão para facilitar consultas e análises.
+Este job tem como objetivo processar os dados da Trusted Zone e organizá-los na Refined Zone para análises futuras. Durante o processamento, os dados são padronizados, enriquecidos e estruturados em tabelas fato e dimensão, garantindo qualidade e consistência
 
 ### Código 
 
