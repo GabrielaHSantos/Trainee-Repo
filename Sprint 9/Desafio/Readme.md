@@ -6,27 +6,25 @@ O objetivo deste projeto foi implementar a camada Refined no Data Lake, utilizan
 
 # Perguntas Selecionadas para Análise
 
-O foco da análise foi a franquia Pokémon, com o objetivo de entender sua evolução ao longo do tempo, considerando popularidade, lucratividade, comparação com outras franquias e mudanças no público-alvo. As principais perguntas que guiaram a análise foram:
+O foco da análise foi a franquia Pokémon, com o objetivo de entender sua evolução ao longo do tempo, considerando popularidade, lucratividade e comparação com outras franquias. As principais perguntas que guiaram a análise foram:
 
-    Como a avaliação dos filmes e séries de Pokémon mudou ao longo do tempo?
+- Como a avaliação dos filmes e séries de Pokémon mudou ao longo do tempo?
 
-    Quais anos tiveram os maiores picos de popularidade para filmes e séries de Pokémon?
+- Quais anos tiveram os maiores picos de popularidade para filmes e séries de Pokémon?
 
-    Existe correlação entre lançamentos de jogos Pokémon e o aumento do interesse nos filmes/séries?
+- Existe correlação entre lançamentos de jogos Pokémon e o aumento do interesse nos filmes/séries?
 
-    Como a quantidade de lançamentos de filmes e séries mudou com o tempo?
+- Como a quantidade de lançamentos de filmes e séries mudou com o tempo?
 
-    Como a receita dos filmes Pokémon evoluiu até 2022?
+- Como a receita dos filmes Pokémon evoluiu até 2022?
 
-    Comparando com outras animações (Digimon, Dragon Ball, One Piece etc.), Pokémon foi mais ou menos lucrativo?
+- Comparando com outras animações (Digimon, Dragon Ball, One Piece etc.), Pokémon foi mais ou menos lucrativo?
 
-    Existe relação entre a bilheteria dos filmes Pokémon e os períodos de maior venda dos jogos?
+- Existe relação entre a bilheteria dos filmes Pokémon e os períodos de maior venda dos jogos?
 
-    Qual foi o impacto do lançamento de Pokémon GO (2016) na popularidade dos filmes e séries?
+- Qual foi o impacto do lançamento de Pokémon GO (2016) na popularidade dos filmes e séries?
 
-    Como a pandemia de COVID-19 impactou os lançamentos e a popularidade da franquia?
-
-    Os filmes recentes são voltados para o público original (adultos nostálgicos) ou continuam mirando em crianças?
+- Como a pandemia de COVID-19 impactou os lançamentos e a popularidade da franquia?
 
 # Modelagem de Dados
 
