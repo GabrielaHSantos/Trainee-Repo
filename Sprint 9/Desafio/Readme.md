@@ -29,7 +29,8 @@ O foco da análise foi a franquia Pokémon, com o objetivo de entender sua evolu
 # Modelagem de Dados
 
 A modelagem de dados foi realizada seguindo os princípios de modelagem multidimensional, com a criação de tabelas e views no AWS Glue Data Catalog. A origem dos dados foi a camada Trusted, e os dados foram transformados e armazenados na camada Refined no formato Parquet, particionados conforme necessário.
-Diagrama da Modelagem de Dados
+
+## Diagrama da Modelagem de Dados
 
 ### Aqui está um diagrama que ilustra a estrutura da camada Refined:
 
