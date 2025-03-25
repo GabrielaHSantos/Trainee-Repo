@@ -1,0 +1,23 @@
+Apresente a query para listar código, nome e data de nascimento dos dependentes do vendedor com menor valor total bruto em vendas (não sendo zero). As colunas presentes no resultado devem ser cddep, nmdep, dtnasc e valor_total_vendas.
+
+
+Observação: Apenas vendas com status concluído.
+
+WITH vendedor_menor_venda AS (
+    SELECT 
+        tbvendas.cdvdd,
+        SUM(tbvendas.qtd * tbvendas.vrunt) AS valor_total_vendas
+    FROM tbvendas
+    WHERE tbvendas.status = 'Concluído'
+    GROUP BY tbvendas.cdvdd
+    HAVING SUM(tbvendas.qtd * tbvendas.vrunt) > 0
+    ORDER BY valor_total_vendas ASC
+    LIMIT 1
+)
+SELECT 
+    tbdependente.cddep, 
+    tbdependente.nmdep, 
+    tbdependente.dtnasc, 
+    vmv.valor_total_vendas
+FROM tbdependente
+JOIN vendedor_menor_venda vmv ON tbdependente.cdvdd = vmv.cdvdd;

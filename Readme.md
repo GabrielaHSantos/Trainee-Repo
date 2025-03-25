@@ -16,12 +16,22 @@ Porque da pra encarar todo o processo de programar algo como um grande roteiro, 
 
 ## Sprints
 
-[Sprint 1](/Sprint%201)
+[Sprint 01](/Sprint%2001/)
 
-[Sprint 2](/Sprint%202)
+[Sprint 02](/Sprint%2002)
 
-[Sprint 3](/Sprint%203)
+[Sprint 03](/Sprint%2003)
 
-[Sprint 4](/Sprint%204)
+[Sprint 04](/Sprint%2004)
 
-[Sprint 5](/Sprint%205)
+[Sprint 05](/Sprint%2005)
+
+[Sprint 06](/Sprint%2006)
+
+[Sprint 07](/Sprint%2007)
+
+[Sprint 08](/Sprint%2008)
+
+[Sprint 09](/Sprint%2009)
+
+[Sprint 10](/Sprint%2010)
